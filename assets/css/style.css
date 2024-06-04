@@ -1,7 +1,78 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: -webkit-linear-gradient(90deg, #cac8b7, #e4c1be, #d1f5da);
+    background: linear-gradient(90deg, #cac8b7, #e4c1be, #d1f5da);
+}
+
+.app {
+    display: flex;
+    margin: 100px auto;
+    width: 350px;
+    height: 400px;
+    background-color: aqua;
+}
+
+.app-card,
+.app-calculateTotal {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-card{
+    width: 65%;
+    background-color: #6B8E23;
+    color: white;
+    border-radius: 10px;
+    box-shadow: inset 0 -2px rgb(46, 45, 45);
+    align-items: center;
+}
+
+img {
+    width: 220px;
+    height: 150px;
+}
+
+input {
+    margin: 4px;
+    padding: 4px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+}
+
+button {
+    background-color: #E2A30B;
+    color: white;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #58751d;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+    width: 120px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: #6B8E23;
+}
+
+.name-product {
+    font-size: 13px;
+}
+
+#price {
+    font-size: 20px;
+}
 
 #productColor {
     background-color: black;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
+}
+
+.note-color, #nota {
+    font-size: 10px;
 }
