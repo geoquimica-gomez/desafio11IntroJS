@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafio 11-Calculando el Total</title>
+</head>
+<body>
+    <div class="app">
+        <div class="app-card">
+            <input type="text" id="amountInput" required placeholder="Cantidad">
+            <input type="text" id="colorInput" required placeholder="Color">
+            <p id="price">Precio: 400000</p>
+            <button onclick="
+            //Precio del product
+            const PRICE = 400000;
+
+            //Elementos del DOM
+            const amountInput = document.querySelector('#amountInput').value;
+            const colorInput = document.querySelector('#colorInput').value;
+            const totalPrice = document.querySelector('#totalPrice');
+            const amount = document.querySelector('#amount');
+            const productColor = document.querySelector('#productColor');
+
+            //  logs para verificar los cambios en el DOM
+
+            console.log('Precio:', PRICE);
+            console.log('Cantidad ingresada:', amountInput);
+            console.log('Color ingresado:', colorInput);
+
+            // logica para el botón :3
+
+            amount.innerHTML = 'Cantidad: ' + amountInput;
+            productColor.style.backgroundColor = colorInput;
+            totalPrice.innerHTML = 'Total $' + PRICE*Number(amountInput);
+
+            ">Calcular total</button>
+        </div>
+        <div class="app-calculateTotal">
+            <div>
+                <p id="totalPrice">Total: $0</p>
+            </div>
+            <div>
+                <p id="amount">Cantidad: 0</p>
+            </div>
+            <div>
+                <p>Color:</p>
+                <div id="productColor"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
