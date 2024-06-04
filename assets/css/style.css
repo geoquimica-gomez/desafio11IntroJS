@@ -9,7 +9,6 @@ body {
     margin: 100px auto;
     width: 350px;
     height: 400px;
-    background-color: aqua;
 }
 
 .app-card,
@@ -75,4 +74,20 @@ button:hover {
 
 .note-color, #nota {
     font-size: 10px;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+ul {
+    margin-left: -20px;
+}
+
+.app-calculateTotal {
+    background-color: white;
+    justify-content: center;
+    padding-left: 4px;
 }
